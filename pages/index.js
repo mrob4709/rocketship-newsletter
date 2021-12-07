@@ -14,34 +14,44 @@ export default function Home() {
       </Head>
       <form
         className="form"
-        action="/success"
         name="rocketshipform"
+        action="/success"
         method="POST"
         data-netlify="true"
       >
-        <h1>Sign up to our RocketShip Newsletter!</h1>
         <input
-          type="text"
           className="form-field"
-          placeholder="First Name"
-          onChange={(e) => setFirstName(e.target.value)}
-          value={firstName}
+          type="hidden"
+          name="form-name"
+          value="contact"
         />
-        <input
-          type="text"
-          className="form-field"
-          placeholder="Last Name"
-          onChange={(e) => setLastName(e.target.value)}
-          value={lastName}
-        />
-        <input
-          type="email"
-          className="form-field"
-          placeholder="Email Address"
-          onChange={(e) => setEmail(e.target.value)}
-          value={email}
-        />
-        <input type="submit" value="Submit" className="submit-btn" />
+        <p>
+          <label htmlFor="yourname">Your Name:</label>
+          <input className="form-field" type="text" name="name" id="yourname" />
+        </p>
+        <p>
+          <label htmlFor="youremail">Your Email: </label>{" "}
+          <input
+            className="form-field"
+            type="email"
+            name="email"
+            id="youremail"
+          />
+        </p>
+        <p>
+          <label htmlFor="yourmessage">Message: </label>
+          <input
+            className="form-field"
+            type="text"
+            name="message"
+            id="yourmessage"
+          ></input>
+        </p>
+        <p>
+          <button className="submit-btn" type="submit">
+            Send
+          </button>
+        </p>
       </form>
     </div>
   );
