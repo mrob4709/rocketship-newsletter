@@ -14,6 +14,7 @@ export default function Home() {
         method="POST"
         data-netlify="true"
       >
+        <input type="hidden" name="form-name" value="rocketshipform" />
         <input
           className="form-field"
           type="hidden"
