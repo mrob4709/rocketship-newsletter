@@ -1,11 +1,6 @@
 import Head from "next/head";
-import { useState } from "react";
 
 export default function Home() {
-  const [firstName, setFirstName] = useState("");
-  const [lastName, setLastName] = useState("");
-  const [email, setEmail] = useState("");
-
   return (
     <div>
       <Head>
