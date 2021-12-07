@@ -6,16 +6,14 @@ export default function Home() {
   const [lastName, setLastName] = useState("");
   const [email, setEmail] = useState("");
 
-  console.log("First Name: ", firstName);
-
   return (
     <div>
       <Head>
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <h1>Sign up to our newsletter</h1>
       <form className="form">
+        <h1>Sign up to our newsletter</h1>
         <input
           type="text"
           className="form-field"
