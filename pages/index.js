@@ -12,7 +12,13 @@ export default function Home() {
         <title>RocketShip Newsletter</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <form className="form" name="rocketshipform" method="POST" netlify>
+      <form
+        className="form"
+        action="/success"
+        name="rocketshipform"
+        method="POST"
+        data-netlify="true"
+      >
         <h1>Sign up to our RocketShip Newsletter!</h1>
         <input
           type="text"
