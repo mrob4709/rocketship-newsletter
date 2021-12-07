@@ -9,11 +9,11 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>Create Next App</title>
+        <title>RocketShip Newsletter</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <form className="form" netlify>
-        <h1>Sign up to our newsletter</h1>
+        <h1>Sign up to our RocketShip Newsletter!</h1>
         <input
           type="text"
           className="form-field"
