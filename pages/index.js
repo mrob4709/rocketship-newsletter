@@ -12,7 +12,7 @@ export default function Home() {
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <form className="form">
+      <form className="form" netlify>
         <h1>Sign up to our newsletter</h1>
         <input
           type="text"
