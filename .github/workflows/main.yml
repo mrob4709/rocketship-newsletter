@@ -1,0 +1,32 @@
+# .github/workflows/scheduled-builds.yml
+name: Triggering Serverless function
+
+on:
+  schedule:
+    # Runs "every 5 minutes"
+    - cron: '*/5 * * * *'
+jobs:
+  build:
+    name: Trigger function
+    runs-on: ubuntu-latest
+    steps:
+      - run: curl -X GET -d {} https://peaceful-hamilton-22cdf2.netlify.app/api/hello
+      - run: sleep 5
+      - run: curl -X GET -d {} https://peaceful-hamilton-22cdf2.netlify.app/api/hello
+      - run: sleep 5
+      - run: curl -X GET -d {} https://peaceful-hamilton-22cdf2.netlify.app/api/hello
+      - run: sleep 5
+      - run: curl -X GET -d {} https://peaceful-hamilton-22cdf2.netlify.app/api/hello
+      - run: sleep 5
+      - run: curl -X GET -d {} https://peaceful-hamilton-22cdf2.netlify.app/api/hello
+      - run: sleep 5
+      - run: curl -X GET -d {} https://peaceful-hamilton-22cdf2.netlify.app/api/hello
+      - run: sleep 5
+      - run: curl -X GET -d {} https://peaceful-hamilton-22cdf2.netlify.app/api/hello
+      - run: sleep 5
+      - run: curl -X GET -d {} https://peaceful-hamilton-22cdf2.netlify.app/api/hello
+      - run: sleep 5
+      - run: curl -X GET -d {} https://peaceful-hamilton-22cdf2.netlify.app/api/hello
+      - run: sleep 5
+      - run: curl -X GET -d {} https://peaceful-hamilton-22cdf2.netlify.app/api/hello
+      - run: sleep 5
